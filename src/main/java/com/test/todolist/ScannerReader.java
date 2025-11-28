@@ -17,4 +17,12 @@ public class ScannerReader {
         }
     }
 
+
+
+    protected String getNextString(){
+        String temp = scanner.nextLine();
+        scanner.close();
+        return temp;
+    }
+
 }
