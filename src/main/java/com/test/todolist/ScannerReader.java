@@ -8,21 +8,20 @@ public class ScannerReader {
         String temp = scanner.nextLine();
         while (true) {
             if (scanner.hasNextInt()) {
-                scanner.close();
                 return Integer.parseInt(temp);
             } else {
                 System.out.println("无效输入!");
-                scanner.nextLine();
             }
         }
     }
 
-
-
     protected String getNextString(){
-        String temp = scanner.nextLine();
+        return scanner.nextLine();
+    }
+
+
+    protected void close(){
         scanner.close();
-        return temp;
     }
 
 }
