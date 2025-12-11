@@ -95,7 +95,7 @@ public class Specialtodolistitem extends Todolistitem {
     @Override
     public String toString() {
         String baseInfo = super.toString();
-        String timeStr = creationTime.format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+         String timeStr = creationTime.format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         String timeDeadline = deadline.format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         return baseInfo + " (创建于: " + timeStr +",截止于" + timeDeadline + ")";
     }
